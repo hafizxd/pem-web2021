@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Biodata Mahasiswa</h2>
+        </header>
+
+        <div class="biodata">
+            <div class="profile-photo">
+                <img src="img/DSC_4384_115246.jpg" alt="Profile Photo">
+            </div>
+
+            <div class="profile">
+                    <table>
+                        <tr>
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td>Hafiz Aminsalim</td>
+                        </tr>
+                        <tr>
+                            <td>NIM</td>
+                            <td>:</td>
+                            <td>A11.2021.13218</td>
+                        </tr>
+                        <tr>
+                            <td>Dosen Wali</td>
+                            <td>:</td>
+                            <td>Dr. Guruh Fajar Shidik, S.Kom., M.Cs</td>
+                        </tr>
+                        <tr>
+                            <td>Status</td>
+                            <td>:</td>
+                            <td>Aktif</td>
+                        </tr>
+                        <tr>
+                            <td>Alamat</td>
+                            <td>:</td>
+                            <td>Gribig Gebog Kudus</td>
+                        </tr>
+                        <tr>
+                            <td>No HP</td>
+                            <td>:</td>
+                            <td>085719595896</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>:</td>
+                            <td>
+                                111202113218@mhs.dinus.ac.id <br>
+                                hafizamin8116@gmail.com
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Agama</td>
+                            <td>:</td>
+                            <td>Islam</td>
+                        </tr>
+                    </table>
+            </div>
+        </div>
+
+        <div class="krs">
+            <div class="title">Jadwal KRS</div>
+
+            <div class="krs-data">
+                <table border="1" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Kode Mata Kuliah</th>
+                            <th>Kelompok</th>
+                            <th>Mata Kuliah</th>
+                            <th>SKS</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>A11.54101</td>
+                            <td>A11.4101</td>
+                            <td>KALKULUS 1 </td>
+                            <td>4</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>A11.54105</td>
+                            <td>A11.4101</td>
+                            <td>DASAR PEMROGRAMAN</td>
+                            <td>4</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>A11.54302</td>
+                            <td>A11.4101</td>
+                            <td>MATEMATIKA DISKRIT</td>
+                            <td>3</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>A11.54314</td>
+                            <td>A11.4101</td>
+                            <td>PEMROGRAMAN BERBASIS WEB</td>
+                            <td>2</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>A11.54403</td>
+                            <td>A11.4101</td>
+                            <td>ORGANISASI DAN ARSITEKTUR KOMPUTER</td>
+                            <td>3</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>AF201704</td>
+                            <td>A11.4101</td>
+                            <td>DASAR DASAR KOMPUTASI </td>
+                            <td>2</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>U201704</td>
+                            <td>A11.4MATR</td>
+                            <td>PENGANTAR TEKNOLOGI INFORMASI</td>
+                            <td>2</td>
+                            <td>B</td>
+                        </tr>                                                     
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    body {
+        background-color: #f0f0ef;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        margin: 30px 0;
+    }
+
+    .biodata {
+        display: flex;
+        border-top: 2px dashed #d02121;
+        padding: 20px;
+    }
+
+    .profile-photo {
+        padding-top: 10px;
+        width: 150px;
+    }
+
+    .profile-photo img{
+        width: 100%;
+    }
+
+    .profile {
+        margin-left: 50px;
+    }
+
+    .profile table {
+        border-collapse: collapse;
+    }
+
+    .profile table tr {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .profile table tr td {
+        padding: 10px;
+    }
+
+    .krs {
+        margin: 30px 0;
+        padding: 30px 50px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 4px 2px 10px 0.3px #c2c1c1;
+    }
+
+    .krs-data table {
+        margin: 20px 0;
+        border-collapse: collapse;
+        color: #2b2b2b;
+    }
+
+    .krs-data table thead tr {
+        color: white;
+        background-color: #111774;
+    }
+
+    .krs-data table th, .krs-data table td {
+        padding: 10px;
+    }
+
+    .krs-data table td {
+        border: 1px solid #9d9d9d;
+    }
+</style>
