@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h3>FORMULIR PPDB JALUR ZONASI TAHUN 2021</h3>
+        </div>
+
+        <div class="form-holder">
+            <form action="/process.php" method="post">
+                <table border="1">
+                    <tr>
+                        <th>Nomor</th>
+                        <th colspan="2">INFO PENDAFTARAN</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>NISN</td>
+                        <td>
+                            : <input type="number" name="nisn" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Asal Sekolah</td>
+                        <td>
+                            : <select name="asal-sekolah">
+                                <option value="" selected disabled>Pilih Sekolah</option>
+                                <option value="1">SMA 1 Semarang</option>
+                                <option value="2">SMA 2 Semarang</option>
+                                <option value="3">SMA 3 Semarang</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Tahun Lulus</td>
+                        <td>
+                            : <input type="number" name="tahun-lulus">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="3">DATA CALON PESERTA</th>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Nama Lengkap</td>
+                        <td>
+                            : <input type="text" name="nama-lengkap" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>NIK</td>
+                        <td>
+                            : <input type="number" name="nik">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Tempat, Tanggal Lahir</td>
+                        <td>
+                            : <input type="text" name="ttl">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Jenis Kelamin</td>
+                        <td>
+                            : 
+                            <input type="radio" name="gender" id="man">
+                            <label for="man">Laki-laki</label>
+                            <input type="radio" name="gender" id="woman">
+                            <label for="woman">Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Alamat</td>
+                        <td>
+                            : <textarea name="alamat" rows="2" cols="27"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="stick-right">Desa / Kel.</td>
+                        <td>
+                            : <input type="text" name="desa">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="stick-right">Kecamatan</td>
+                        <td>
+                            : <input type="text" name="kecamatan">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td class="stick-right">Kabupaten</td>
+                        <td>
+                            : <input type="text" name="kabupaten">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td class="stick-right">Provinsi</td>
+                        <td>
+                            : <input type="text" name="provinsi">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Email Aktif</td>
+                        <td>
+                            : <input type="email" name="email">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="3">DATA ORANG TUA</th>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Nomor Kartu Keluarga</td>
+                        <td>
+                            : <input type="number" name="kk">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Nama Ayah Kandung</td>
+                        <td>
+                            : <input type="text" name="nama-ayah">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Agama</td>
+                        <td>
+                            : 
+                            <select name="agama-ayah">
+                                <option value="" selected disabled>Pilih Agama</option>
+                                <option value="1">Islam</option>
+                                <option value="2">Protestan</option>
+                                <option value="3">Katolik</option>
+                                <option value="4">Hindu</option>
+                                <option value="5">Budha</option>
+                                <option value="6">Konghucu</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>Pekerjaan</td>
+                        <td>
+                            : <input type="text" name="pekerjaan-ayah">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>Nama Ibu Kandung</td>
+                        <td>
+                            : <input type="text" name="nama-ibu">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>Agama</td>
+                        <td>
+                            : 
+                            <select name="agama-ibu">
+                                <option value="" selected disabled>Pilih Agama</option>
+                                <option value="1">Islam</option>
+                                <option value="2">Protestan</option>
+                                <option value="3">Katolik</option>
+                                <option value="4">Hindu</option>
+                                <option value="5">Budha</option>
+                                <option value="6">Konghucu</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Pekerjaan</td>
+                        <td>
+                            : <input type="text" name="pekerjaan-ibu">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>Alamat Orang Tua</td>
+                        <td>
+                            : <textarea name="alamat-orangtua" rows="2" cols="27"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td class="stick-right">Desa / Kel.</td>
+                        <td>
+                            : <input type="text" name="desa-orangtua">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td class="stick-right">Kecamatan</td>
+                        <td>
+                            : <input type="text" name="kecamatan-orangtua">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td class="stick-right">Kabupaten</td>
+                        <td>
+                            : <input type="text" name="kabupaten-orangtua">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td class="stick-right">Provinsi</td>
+                        <td>
+                            : <input type="text" name="provinsi-orangtua">
+                        </td>
+                    </tr>
+                </table>
+
+                <input class="btn-submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+        padding: 50px 0;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .form-holder {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    table th, table td {
+        padding: 5px;
+    }
+
+    table th {
+        text-align: left;
+    }
+
+    table td:nth-child(1) {
+        text-align: center;
+    }
+
+    table td:nth-child(2) {
+        border-right: 0;
+        padding-right: 10px;
+    }
+
+    table td:nth-child(3) {
+        border-left: 0;
+    }
+
+    table .stick-right {
+        padding-left: 100px;
+    }
+
+    .btn-submit {
+        margin: 20px 0;
+        padding: 10px;
+    }
+
+    .btn-submit:hover {
+        cursor: pointer;
+    }
+</style>
